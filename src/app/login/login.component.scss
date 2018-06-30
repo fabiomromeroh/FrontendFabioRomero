@@ -1,0 +1,54 @@
+$topnav-background-color: steelblue;
+:host {
+    display: block;
+}
+.login-form{
+    text-align: center;
+    button{
+        width: 100%;
+        background-color:#D9534F;
+        color: white;
+    };
+    background-color: white;
+    margin-top: 210px;
+    padding: 2px 2px 50px 2px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.login-title{
+    color: #D9534F;
+}
+.login-img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.login-header{
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #1B415A;
+}
+.login-body{
+    margin: 15px 75px 0 75px;
+    color: #777;
+}
+
+div.error-message i{
+    vertical-align: middle !important;
+}
+
+.error-message{
+    color: rgba(199, 33, 33, 0.836);
+    padding-bottom: 8px;
+}
+
+.login-page{
+background-color: #484a4c;
+    height: 100% !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+

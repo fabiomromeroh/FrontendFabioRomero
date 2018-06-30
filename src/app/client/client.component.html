@@ -1,0 +1,56 @@
+<loader [hidden]="!showLoader"></loader>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="ibox float-e-margins">
+      <div class="ibox-content">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <div class="form-group">
+              <div class="pull-left">
+                <h2>
+                  <strong>Clientes</strong>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-2">
+            <label for="name">Nombre</label>
+            <input (keyup.enter)="searchClient()" [(ngModel)]="clientName" type="text" name="name" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary search" (click)="searchClient()">Buscar</button>
+          </div>
+        </div>
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr >
+              <th hidden>ClientID</th>
+              <th style="width: 40%;">Nombre</th>
+              <th style="width: 40%;">Email</th>
+              <th style="width: 40%;">Rol</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <div [hidden]="totalClient > 0" class="center">
+                <label>no se encontrron</label>
+            </div> -->
+            <tr *ngFor="let cli of clients">
+              <td hidden>{{ cli.id }}</td>
+              <td>{{ cli.name }}</td>
+              <td>{{ cli.email }}</td>
+              <td>{{ cli.role }}</td>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="form-row">
+          <label>Total de clientes: {{totalClient}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+

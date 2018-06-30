@@ -1,0 +1,23 @@
+<div class="login-page">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 login-form border rounded">
+            <div class="panel-heading text-center login-header">
+                <div class="login-title">Desde aquí se loguean los usuarios</div>
+            </div>
+            <div class="login-body">
+                <form #loginForm="ngForm" (ngSubmit)="OnSubmit(Email.value)">
+                    <div class="form-content">
+                        <div class="form-group">
+                            <input type="text" #Email ngModel name="Email" class="form-control input-underline input-lg"  placeholder="Email" required>
+                        </div>
+                        <div *ngIf="isLoginError" class="error-message">
+                            <i class="material-icons"></i>Usuario y/o Contraseña incorrectos.
+                        </div>
+                    </div>
+                    <button class="btn rounded-btn" [disabled]="!loginForm.valid" type="submit"> Ingresar </button>
+                    <div style="padding-top: 5px; width: 7%; margin: 0 auto;"><mat-spinner [diameter]="20" [hidden]="!showSpinner"></mat-spinner></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

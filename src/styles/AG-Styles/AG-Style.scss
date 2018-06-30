@@ -1,0 +1,274 @@
+
+b, strong {
+  font-weight: 700;
+}
+
+input.ng-dirty.ng-invalid {
+  border-color: rgba(255, 0, 0, 0.623)
+}
+
+.status-active{
+  color: rgb(57, 165, 57);
+}
+
+.status-inactive{
+  color: rgb(216, 32, 32);
+}
+
+.status-pending{
+  color: goldenrod;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+}
+
+html, body,app-login{
+  height: 100% !important;
+  margin:0;
+}
+
+label{
+  margin-bottom: 2px;
+  font-weight:bold;
+  color:black;
+}
+
+.panel-heading{
+  padding-bottom: 15px;
+}
+
+.button-section{
+  float: right;
+  padding: 15px
+}
+
+.tab-body{
+  padding-top: 20px;
+}
+
+.overlay input[type="text"] {
+  background-color:#EFEFEF;
+  opacity: .4;  
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+  font-weight: 500;
+  border-color: #929292;
+}
+
+.overlay button {
+  background-color:#EFEFEF;
+  opacity: .4;  
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+  font-weight: 500;
+  border-color: #929292;
+}
+
+.overlay mat-select {
+  background-color:#EFEFEF;
+  opacity: .4; 
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+  font-weight: 500;
+  border-color: #929292;
+}
+
+.overlay mat-checkbox {
+  background-color:#EFEFEF;
+  opacity: .4; 
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+  font-weight: 500;
+}
+
+.overlay textarea {
+  background-color:#EFEFEF;
+  opacity: .4; 
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+  font-weight: 500;
+}
+
+.overlay mat-radio-group {
+  background-color:#EFEFEF;
+  opacity: .4; 
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+  font-weight: 500;
+}
+
+.overlay-sector
+{
+  background-color:#EFEFEF;
+  color: black;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.overlay input[type="text"]:hover {
+  cursor: not-allowed;
+}
+
+.enabled{
+  background-color: #fffafa !important;
+  opacity: 2 !important;
+  pointer-events: visible !important;
+}
+
+.form-body{
+  padding: 10px;
+}
+
+.mat-select-value{
+  height: 35px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.mat-select{
+  height: 35px;
+  border: 1px solid #e5e6e7;
+  border-radius: 5px;
+}
+
+
+input[type='file'] {
+  width: 80px;
+    height: 28px;
+    position: relative;
+    float: left;
+}
+
+input[type='file']:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #FF0000;
+  content: "Cargar";
+  color: #FFFFFF;
+  display: block;
+  width: 80px;
+  height: 28px;
+  padding-top: 5px;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+
+canvas {
+  display: block;
+  margin-top: 30px;
+}
+
+.col-image{
+  padding-left: 25px;
+}
+
+.image-section{
+  background-color: #EFEFEF;
+  height: 250px;
+  width: 300px;
+  padding-left: 50px;
+  padding-top: 15px;
+  border-radius: 5px;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+  background-color: #1dc5a3;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle
+{
+  border-color: #1dc5a3;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+  background-color: #1dc5a3;
+}
+
+.qrcode img{
+  border: solid;
+  border-width: thin;
+  color: #929292;
+}
+
+.ng-dirty.ng-touched.ng-invalid{
+  border-color: rgba(255, 0, 0, 0.623);
+}
+.ng-touched.ng-invalid{
+  border-color: rgba(255, 0, 0, 0.623);
+}
+
+.error-label{
+  color:rgba(255, 0, 0, 0.623);
+}
+
+.image-button {
+  display: none;
+  position: absolute;
+  left: 90px;
+  top: 50px;
+  padding: 3px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  border: solid 2px white;
+}
+
+.change-image:hover + .image-button, .image-button:hover {
+  display: inline-block;
+}
+
+.upload-image > div{
+  display: none;
+  position: absolute;
+  left: 112px;
+  top: 84px;
+  padding: 3px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  border: solid 2px white;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.upload-image {
+  position: relative;
+  background-color: #a7a7a7;
+}
+
+mat-spinner.small-spinner svg { width: 40px !important; height: 40px !important; }
+
+.reSubscribe input[type="text"]{
+  pointer-events: auto;
+  background-color: white;
+  opacity: 1;
+  cursor: default !important;
+}
+
+.reSubscribe button{
+  pointer-events: auto;
+  background-color: white;
+  opacity: 1;
+  cursor: pointer !important;
+}
+
+table {
+  display: block;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.search
+{
+    margin-top: 18px;
+}
