@@ -16,7 +16,7 @@ export class PolicyComponent implements OnInit {
   policies:Policy[];
   client:Client = new Client();
   showLoader: boolean = false;
-  clientName: string;
+  clientName: string = '';
   totalPolicies:number = 0;
 
   constructor(
