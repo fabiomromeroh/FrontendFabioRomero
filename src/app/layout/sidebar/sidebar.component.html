@@ -3,7 +3,7 @@
         <a routerLink="/client" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-users"></i>&nbsp;Clientes
         </a>
-        <a  routerLink="/policy" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a *ngIf="isAdmin()" routerLink="/policy" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-file"></i>&nbsp;Pólizas
         </a>
     </div>

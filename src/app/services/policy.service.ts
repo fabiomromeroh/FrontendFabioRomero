@@ -9,13 +9,13 @@ export class PolicyService extends BaseService<Policy>{
   
   constructor(http: HttpClient,
     @Inject(APP_CONFIG) config: IAppConfig) { 
-      super(http, "/Policy", config)
+      super(http, "/policies", config)
     }
 
     GetByName(name:string)
     {
       if(name != "")
-        return this.http.get<Policy[]>(this.rootUrl + "/Policy/GetByClient/" + name);
+        return this.http.get<Policy[]>(this.rootUrl + "/policies/byclient/" + name);
       else
         return this.GetAll();
     }

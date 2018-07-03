@@ -9,19 +9,19 @@ export class ClientService extends BaseService<Client>{
 
   constructor(http: HttpClient,
     @Inject(APP_CONFIG) config: IAppConfig) { 
-      super(http, "/Client", config)
+      super(http, "/clients", config)
     }
 
     GetByName(name:string)
     {
       if(name != "")
-        return this.http.get<Client[]>(this.rootUrl + "/Client/GetByName/" + name);
+        return this.http.get<Client[]>(this.rootUrl + "/clients/byname/" + name);
       else
         return this.GetAll();
     }
 
     GetByPolicyID(policiid:string)
     {
-        return this.http.get<Client>(this.rootUrl + "/Client/GetByPolicy/" + policiid);
+        return this.http.get<Client>(this.rootUrl + "/clients/bypolicy/" + policiid);
     }
 }

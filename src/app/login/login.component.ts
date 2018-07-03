@@ -35,7 +35,6 @@ export class LoginComponent implements OnInit {
                 localStorage.setItem('userToken',response.Data.TokenAccess);
                 localStorage.setItem('CurrentUser', JSON.stringify(response.Data));
                 localStorage.setItem('isLoggedin', 'true');
-                var Admin = JSON.parse(localStorage.getItem("CurrentUser")).Role == "admin";
                 this.router.navigate(['/home']);
 
             }else{

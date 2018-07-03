@@ -21,12 +21,12 @@ export abstract class BaseService<T> {
     }
 
     public GetAll(){
-      return this.http.get<T[]>(this.rootUrl + this.prefix + '/GetAll');
+      return this.http.get<T[]>(this.rootUrl + this.prefix);
     }
 
     public GetByID(id:number) : Observable<T>
     {
-        return this.http.get<T>(this.rootUrl + this.prefix + '/GetByID/' + id);
+        return this.http.get<T>(this.rootUrl + this.prefix + '/' + id);
     }
 
     public Remove(id:number) : Observable<T>

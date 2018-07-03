@@ -15,7 +15,7 @@ export class UserService {
 
     var data = "Email=" + email;
     var reqHeader = new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded','No-Auth':'True' });
-    var auth = this.http.post(this.rootUrl + '/User/Login', data, { headers: reqHeader });
+    var auth = this.http.post(this.rootUrl + '/users/login', data, { headers: reqHeader });
     return auth;
   }
 
